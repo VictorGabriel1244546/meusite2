@@ -1,90 +1,90 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.container {
-    width: 40%;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    transition: transform 0.2s;
-}
-
-.container:hover {
-    transform: translateY(-10px);
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
-    color: #00796b;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #b2dfdb;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-input[type="text"]:focus {
-    border-color: #00796b;
-    outline: none;
-}
-
-input[type="submit"] {
-    background-color: #00796b;
+header {
+    background-color: #333;
     color: white;
-    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.login form {
+    display: inline-block;
+    text-align: left;
+}
+
+.login label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.login input {
     width: 100%;
-    padding: 12px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
     border: none;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s, transform 0.2s;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    background-color: #004d40;
-    transform: translateY(-2px);
+button:hover {
+    background-color: #0056b3;
 }
 
-input#buscarProduto {
-    background-color: #0288d1;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
-input#buscarProduto:hover {
-    background-color: #01579b;
+.product {
+    min-width: 200px;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 0 0 auto;
+    text-align: left;
+}
+.product-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
-input#atualizarProduto {
-    background-color: #06da06;
+.product {
+    min-width: 200px;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 0 0 auto;
+    text-align: left;
 }
 
-input#atualizarProduto:hover {
-    background-color: #06da06;
-}
-
-input#deletarProduto {
-    background-color: #d32f2f;
-}
-
-input#deletarProduto:hover {
-    background-color: #b71c1c;
-}
