@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="esqueceu.css">
+    <!-- Importa o Firebase SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+    <script type="module" src="esqueceu.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recuperar Senha</h1>
+        <form id="forgotPasswordForm">
+            <div class="form-group">
+                <label for="email">Endereço de E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar Link de Recuperação</button>
+            </div>
+        </form>
+        <div class="message">
+            <p>Já lembrou da senha? <a href="/login/login.html">Voltar para o Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
